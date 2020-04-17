@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0B8A92E244A1101008A8E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A92D244A1101008A8E58 /* AppDelegate.swift */; };
+		F0B8A930244A1101008A8E58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A92F244A1101008A8E58 /* SceneDelegate.swift */; };
+		F0B8A932244A1101008A8E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A931244A1101008A8E58 /* ViewController.swift */; };
+		F0B8A935244A1101008A8E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A933244A1101008A8E58 /* Main.storyboard */; };
+		F0B8A937244A1103008A8E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A936244A1103008A8E58 /* Assets.xcassets */; };
+		F0B8A93A244A1103008A8E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A938244A1103008A8E58 /* LaunchScreen.storyboard */; };
+		F0B8A93F244A1103008A8E58 /* Pocket Reader WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F0B8A93E244A1103008A8E58 /* Pocket Reader WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0B8A945244A1103008A8E58 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A943244A1103008A8E58 /* Interface.storyboard */; };
+		F0B8A947244A1104008A8E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A946244A1104008A8E58 /* Assets.xcassets */; };
+		F0B8A94E244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F0B8A94D244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0B8A953244A1104008A8E58 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A952244A1104008A8E58 /* InterfaceController.swift */; };
+		F0B8A955244A1104008A8E58 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A954244A1104008A8E58 /* ExtensionDelegate.swift */; };
+		F0B8A957244A1105008A8E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A956244A1105008A8E58 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0B8A940244A1103008A8E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0B8A922244A1101008A8E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0B8A93D244A1103008A8E58;
+			remoteInfo = "Pocket Reader WatchKit App";
+		};
+		F0B8A94F244A1104008A8E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0B8A922244A1101008A8E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0B8A94C244A1104008A8E58;
+			remoteInfo = "Pocket Reader WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0B8A95E244A1105008A8E58 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F0B8A94E244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B8A962244A1105008A8E58 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F0B8A93F244A1103008A8E58 /* Pocket Reader WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F0B8A92A244A1101008A8E58 /* Pocket Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B8A92D244A1101008A8E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0B8A92F244A1101008A8E58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0B8A931244A1101008A8E58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0B8A934244A1101008A8E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0B8A936244A1103008A8E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0B8A939244A1103008A8E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0B8A93B244A1103008A8E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B8A93E244A1103008A8E58 /* Pocket Reader WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Reader WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B8A944244A1103008A8E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F0B8A946244A1104008A8E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0B8A948244A1104008A8E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B8A94D244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pocket Reader WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B8A952244A1104008A8E58 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F0B8A954244A1104008A8E58 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F0B8A956244A1105008A8E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0B8A958244A1105008A8E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0B8A927244A1101008A8E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B8A94A244A1104008A8E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F0B8A921244A1101008A8E58 = {
+			isa = PBXGroup;
+			children = (
+				F0B8A92C244A1101008A8E58 /* Pocket Reader */,
+				F0B8A942244A1103008A8E58 /* Pocket Reader WatchKit App */,
+				F0B8A951244A1104008A8E58 /* Pocket Reader WatchKit Extension */,
+				F0B8A92B244A1101008A8E58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F0B8A92B244A1101008A8E58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8A92A244A1101008A8E58 /* Pocket Reader.app */,
+				F0B8A93E244A1103008A8E58 /* Pocket Reader WatchKit App.app */,
+				F0B8A94D244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0B8A92C244A1101008A8E58 /* Pocket Reader */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8A92D244A1101008A8E58 /* AppDelegate.swift */,
+				F0B8A92F244A1101008A8E58 /* SceneDelegate.swift */,
+				F0B8A931244A1101008A8E58 /* ViewController.swift */,
+				F0B8A933244A1101008A8E58 /* Main.storyboard */,
+				F0B8A936244A1103008A8E58 /* Assets.xcassets */,
+				F0B8A938244A1103008A8E58 /* LaunchScreen.storyboard */,
+				F0B8A93B244A1103008A8E58 /* Info.plist */,
+			);
+			path = "Pocket Reader";
+			sourceTree = "<group>";
+		};
+		F0B8A942244A1103008A8E58 /* Pocket Reader WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8A943244A1103008A8E58 /* Interface.storyboard */,
+				F0B8A946244A1104008A8E58 /* Assets.xcassets */,
+				F0B8A948244A1104008A8E58 /* Info.plist */,
+			);
+			path = "Pocket Reader WatchKit App";
+			sourceTree = "<group>";
+		};
+		F0B8A951244A1104008A8E58 /* Pocket Reader WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F0B8A952244A1104008A8E58 /* InterfaceController.swift */,
+				F0B8A954244A1104008A8E58 /* ExtensionDelegate.swift */,
+				F0B8A956244A1105008A8E58 /* Assets.xcassets */,
+				F0B8A958244A1105008A8E58 /* Info.plist */,
+			);
+			path = "Pocket Reader WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0B8A929244A1101008A8E58 /* Pocket Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B8A963244A1105008A8E58 /* Build configuration list for PBXNativeTarget "Pocket Reader" */;
+			buildPhases = (
+				F0B8A926244A1101008A8E58 /* Sources */,
+				F0B8A927244A1101008A8E58 /* Frameworks */,
+				F0B8A928244A1101008A8E58 /* Resources */,
+				F0B8A962244A1105008A8E58 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0B8A941244A1103008A8E58 /* PBXTargetDependency */,
+			);
+			name = "Pocket Reader";
+			productName = "Pocket Reader";
+			productReference = F0B8A92A244A1101008A8E58 /* Pocket Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F0B8A93D244A1103008A8E58 /* Pocket Reader WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B8A95F244A1105008A8E58 /* Build configuration list for PBXNativeTarget "Pocket Reader WatchKit App" */;
+			buildPhases = (
+				F0B8A93C244A1103008A8E58 /* Resources */,
+				F0B8A95E244A1105008A8E58 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0B8A950244A1104008A8E58 /* PBXTargetDependency */,
+			);
+			name = "Pocket Reader WatchKit App";
+			productName = "Pocket Reader WatchKit App";
+			productReference = F0B8A93E244A1103008A8E58 /* Pocket Reader WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F0B8A94C244A1104008A8E58 /* Pocket Reader WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0B8A95B244A1105008A8E58 /* Build configuration list for PBXNativeTarget "Pocket Reader WatchKit Extension" */;
+			buildPhases = (
+				F0B8A949244A1104008A8E58 /* Sources */,
+				F0B8A94A244A1104008A8E58 /* Frameworks */,
+				F0B8A94B244A1104008A8E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pocket Reader WatchKit Extension";
+			productName = "Pocket Reader WatchKit Extension";
+			productReference = F0B8A94D244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0B8A922244A1101008A8E58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Алексей Пархоменко";
+				TargetAttributes = {
+					F0B8A929244A1101008A8E58 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F0B8A93D244A1103008A8E58 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F0B8A94C244A1104008A8E58 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F0B8A925244A1101008A8E58 /* Build configuration list for PBXProject "Pocket Reader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0B8A921244A1101008A8E58;
+			productRefGroup = F0B8A92B244A1101008A8E58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0B8A929244A1101008A8E58 /* Pocket Reader */,
+				F0B8A93D244A1103008A8E58 /* Pocket Reader WatchKit App */,
+				F0B8A94C244A1104008A8E58 /* Pocket Reader WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0B8A928244A1101008A8E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B8A93A244A1103008A8E58 /* LaunchScreen.storyboard in Resources */,
+				F0B8A937244A1103008A8E58 /* Assets.xcassets in Resources */,
+				F0B8A935244A1101008A8E58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B8A93C244A1103008A8E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B8A947244A1104008A8E58 /* Assets.xcassets in Resources */,
+				F0B8A945244A1103008A8E58 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B8A94B244A1104008A8E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B8A957244A1105008A8E58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0B8A926244A1101008A8E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B8A932244A1101008A8E58 /* ViewController.swift in Sources */,
+				F0B8A92E244A1101008A8E58 /* AppDelegate.swift in Sources */,
+				F0B8A930244A1101008A8E58 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0B8A949244A1104008A8E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B8A955244A1104008A8E58 /* ExtensionDelegate.swift in Sources */,
+				F0B8A953244A1104008A8E58 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0B8A941244A1103008A8E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0B8A93D244A1103008A8E58 /* Pocket Reader WatchKit App */;
+			targetProxy = F0B8A940244A1103008A8E58 /* PBXContainerItemProxy */;
+		};
+		F0B8A950244A1104008A8E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0B8A94C244A1104008A8E58 /* Pocket Reader WatchKit Extension */;
+			targetProxy = F0B8A94F244A1104008A8E58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F0B8A933244A1101008A8E58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0B8A934244A1101008A8E58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0B8A938244A1103008A8E58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0B8A939244A1103008A8E58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F0B8A943244A1103008A8E58 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0B8A944244A1103008A8E58 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0B8A959244A1105008A8E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0B8A95A244A1105008A8E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0B8A95C244A1105008A8E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				INFOPLIST_FILE = "Pocket Reader WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeyParkhomenko.Pocket-Reader.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F0B8A95D244A1105008A8E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				INFOPLIST_FILE = "Pocket Reader WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeyParkhomenko.Pocket-Reader.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F0B8A960244A1105008A8E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				IBSC_MODULE = Pocket_Reader_WatchKit_Extension;
+				INFOPLIST_FILE = "Pocket Reader WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeyParkhomenko.Pocket-Reader.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		F0B8A961244A1105008A8E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				IBSC_MODULE = Pocket_Reader_WatchKit_Extension;
+				INFOPLIST_FILE = "Pocket Reader WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeyParkhomenko.Pocket-Reader.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		F0B8A964244A1105008A8E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				INFOPLIST_FILE = "Pocket Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeyParkhomenko.Pocket-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0B8A965244A1105008A8E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSZQ4D456H;
+				INFOPLIST_FILE = "Pocket Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexeyParkhomenko.Pocket-Reader";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0B8A925244A1101008A8E58 /* Build configuration list for PBXProject "Pocket Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B8A959244A1105008A8E58 /* Debug */,
+				F0B8A95A244A1105008A8E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B8A95B244A1105008A8E58 /* Build configuration list for PBXNativeTarget "Pocket Reader WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B8A95C244A1105008A8E58 /* Debug */,
+				F0B8A95D244A1105008A8E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B8A95F244A1105008A8E58 /* Build configuration list for PBXNativeTarget "Pocket Reader WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B8A960244A1105008A8E58 /* Debug */,
+				F0B8A961244A1105008A8E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0B8A963244A1105008A8E58 /* Build configuration list for PBXNativeTarget "Pocket Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0B8A964244A1105008A8E58 /* Debug */,
+				F0B8A965244A1105008A8E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0B8A922244A1101008A8E58 /* Project object */;
+}
