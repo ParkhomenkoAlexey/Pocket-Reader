@@ -9,9 +9,64 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Pocket_Reader_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Pocket_Reader_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Поллиана" id="Ws5-x1-bpI"/>
+                        <imageView alignment="left" image="444" id="UuG-iY-Aw1"/>
+                        <group width="1" alignment="left" layout="vertical" id="wdy-vb-m1x">
+                            <items>
+                                <label alignment="left" text="Автор:" id="qWG-54-IFU">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="Елена Михалкова" numberOfLines="0" id="nhg-A4-JRq"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" spacing="8" id="OPi-b1-bh2">
+                            <items>
+                                <label alignment="left" text="Издание:" id="knQ-Ce-ev7">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="2019" numberOfLines="0" id="3yr-0e-AAD"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" spacing="8" id="cXL-Jh-YtD">
+                            <items>
+                                <label alignment="left" text="Страниц:" id="NzO-DS-hxT">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="380" numberOfLines="0" id="HRf-qb-eGD"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="BO0-Ce-T8p">
+                            <items>
+                                <label alignment="left" text="Описание:" id="ZSW-SN-HOT">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <button alignment="left" id="gGN-cx-5yB">
+                                    <group key="contentGroup" width="1" alignment="left" id="NnJ-DM-q08">
+                                        <items>
+                                            <label alignment="left" numberOfLines="4" id="RVP-40-Njd">
+                                                <string key="text">Перед вами двадцать шестой роман цикла загадочных детективных историй «Расследования Макара Илюшина и Сергея Бабкина» от признанного мастера остросюжетной прозы Елены Михалковой.\nПожилая женщина Анна Сергеевна Бережкова живет в маленьком поселке, где все друг друга знают. Когда в соседнем пустующем доме наконец появляются новые жильцы, старушка сначала радуется, однако после знакомства с Натальей и Антоном решает, что лучше бы дом и дальше пустовал.</string>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Выбрать книгу" id="bmB-Hw-GW5">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="444" width="207.5" height="250"/>
+    </resources>
 </document>

@@ -24,6 +24,10 @@ class DetailBookController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup(bookitem: BookItem(name: "Поллианна", genre: .children,
+        author: "Элинор Портер", edition: 1913, pages: 260,
+        bookDescription: "После смерти папы маленькую Поллианну отправляют жить к сварливой тётке. Впереди у неё ещё много испытаний… Эта книга, написанная ровно сто лет назад, вошла в золотой фонд литературы для детей.",
+        imageName: "444"))
         setupElements()
         setupConstraints()
     }
