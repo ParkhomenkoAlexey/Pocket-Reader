@@ -109,6 +109,9 @@
                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <segue destination="rPA-yZ-07h" kind="push" id="8dY-uo-zgt"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>
@@ -116,10 +119,60 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-274" y="31"/>
+            <point key="canvasLocation" x="-277" y="-103"/>
+        </scene>
+        <!--Books Interface Controller-->
+        <scene sceneID="bKr-MT-47D">
+            <objects>
+                <controller id="rPA-yZ-07h" customClass="BooksInterfaceController" customModule="Pocket_Reader_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="c3J-vC-cfh">
+                            <items>
+                                <tableRow identifier="bookRow" id="aw0-nb-zda" customClass="TableRowController" customModule="Pocket_Reader_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="2h9-9b-jss">
+                                        <items>
+                                            <label alignment="left" text="Label" id="uWP-xa-P4I"/>
+                                            <label alignment="left" text="Label" id="atH-gv-C8U"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="authorLabel" destination="atH-gv-C8U" id="kzc-DA-3vD"/>
+                                        <outlet property="nameLabel" destination="uWP-xa-P4I" id="M7f-Mn-3Mp"/>
+                                        <segue destination="AgC-eL-Hgc" kind="push" id="Lyn-Y9-3Pi"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="headerRow" id="mYv-7w-WdQ" customClass="HeaderRowController" customModule="Pocket_Reader_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="10" id="JGG-xV-BeU">
+                                        <items>
+                                            <imageView width="24" height="24" alignment="left" verticalAlignment="center" image="children" id="dvu-fv-xTh">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label alignment="left" text="Детские книги" numberOfLines="0" id="XrI-5P-veg">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="dvu-fv-xTh" id="d44-86-rdc"/>
+                                        <outlet property="sectionLabel" destination="XrI-5P-veg" id="hM0-Ws-Azy"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="c3J-vC-cfh" id="sKp-xv-bf5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-277" y="178"/>
         </scene>
     </scenes>
     <resources>
         <image name="444" width="207.5" height="250"/>
+        <image name="children" width="64" height="64"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lyn-Y9-3Pi"/>
+    </inferredMetricsTieBreakers>
 </document>
