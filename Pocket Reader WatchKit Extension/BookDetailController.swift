@@ -1,5 +1,5 @@
 //
-//  InterfaceController.swift
+//  BookDetailController.swift
 //  Pocket Reader WatchKit Extension
 //
 //  Created by Алексей Пархоменко on 17.04.2020.
@@ -10,11 +10,18 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class BookDetailController: WKInterfaceController {
+    
+    @IBOutlet weak var descriptionLabel: WKInterfaceLabel!
+    var book: BookItem!
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
+        if let book = context as? BookItem {
+            self.book = book
+            descriptionLabel.setText(book.bookDescription)
+        }
     }
     
     override func willActivate() {
@@ -24,5 +31,8 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         super.didDeactivate()
     }
-
+    
+    override func contextForSegue(withIdentifier segueIdentifier: String) -> Any? {
+        return book.bookDescription
+    }
 }

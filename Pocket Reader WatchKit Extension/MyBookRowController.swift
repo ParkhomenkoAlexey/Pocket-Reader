@@ -10,6 +10,11 @@ import WatchKit
 
 class MyBookRowController: NSObject {
     
+    var book: BookItem! {
+        didSet {
+            nameLabel.setText(book.name)
+        }
+    }
+    
     @IBOutlet weak var nameLabel: WKInterfaceLabel!
-
 }

@@ -16,7 +16,7 @@
 		F0B8A945244A1103008A8E58 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A943244A1103008A8E58 /* Interface.storyboard */; };
 		F0B8A947244A1104008A8E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A946244A1104008A8E58 /* Assets.xcassets */; };
 		F0B8A94E244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F0B8A94D244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F0B8A953244A1104008A8E58 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A952244A1104008A8E58 /* InterfaceController.swift */; };
+		F0B8A953244A1104008A8E58 /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A952244A1104008A8E58 /* BookDetailController.swift */; };
 		F0B8A955244A1104008A8E58 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A954244A1104008A8E58 /* ExtensionDelegate.swift */; };
 		F0B8A957244A1105008A8E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A956244A1105008A8E58 /* Assets.xcassets */; };
 		F0B8A967244A1138008A8E58 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A966244A1138008A8E58 /* BooksViewController.swift */; };
@@ -26,6 +26,8 @@
 		F0B8A96F244A1192008A8E58 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A96E244A1192008A8E58 /* UserSettings.swift */; };
 		F0B8A975244B03E6008A8E58 /* StarterInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A974244B03E6008A8E58 /* StarterInterfaceController.swift */; };
 		F0B8A977244B0627008A8E58 /* MyBookRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A976244B0627008A8E58 /* MyBookRowController.swift */; };
+		F0CCC8EA244B2DCC0006892E /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A96C244A117F008A8E58 /* BookItem.swift */; };
+		F0E2BA8A244B2FFF00974888 /* DescriptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E2BA89244B2FFF00974888 /* DescriptionInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +85,7 @@
 		F0B8A946244A1104008A8E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B8A948244A1104008A8E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0B8A94D244A1104008A8E58 /* Pocket Reader WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pocket Reader WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0B8A952244A1104008A8E58 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F0B8A952244A1104008A8E58 /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		F0B8A954244A1104008A8E58 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F0B8A956244A1105008A8E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B8A958244A1105008A8E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		F0B8A96E244A1192008A8E58 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		F0B8A974244B03E6008A8E58 /* StarterInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterInterfaceController.swift; sourceTree = "<group>"; };
 		F0B8A976244B0627008A8E58 /* MyBookRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookRowController.swift; sourceTree = "<group>"; };
+		F0E2BA89244B2FFF00974888 /* DescriptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,7 @@
 		F0B8A921244A1101008A8E58 = {
 			isa = PBXGroup;
 			children = (
+				F0B8A96C244A117F008A8E58 /* BookItem.swift */,
 				F0B8A92C244A1101008A8E58 /* Pocket Reader */,
 				F0B8A942244A1103008A8E58 /* Pocket Reader WatchKit App */,
 				F0B8A951244A1104008A8E58 /* Pocket Reader WatchKit Extension */,
@@ -165,7 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				F0B8A974244B03E6008A8E58 /* StarterInterfaceController.swift */,
-				F0B8A952244A1104008A8E58 /* InterfaceController.swift */,
+				F0B8A952244A1104008A8E58 /* BookDetailController.swift */,
+				F0E2BA89244B2FFF00974888 /* DescriptionInterfaceController.swift */,
 				F0B8A976244B0627008A8E58 /* MyBookRowController.swift */,
 				F0B8A954244A1104008A8E58 /* ExtensionDelegate.swift */,
 				F0B8A956244A1105008A8E58 /* Assets.xcassets */,
@@ -194,7 +199,6 @@
 		F0B8A972244A129D008A8E58 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F0B8A96C244A117F008A8E58 /* BookItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,8 +359,10 @@
 			files = (
 				F0B8A975244B03E6008A8E58 /* StarterInterfaceController.swift in Sources */,
 				F0B8A977244B0627008A8E58 /* MyBookRowController.swift in Sources */,
+				F0E2BA8A244B2FFF00974888 /* DescriptionInterfaceController.swift in Sources */,
+				F0CCC8EA244B2DCC0006892E /* BookItem.swift in Sources */,
 				F0B8A955244A1104008A8E58 /* ExtensionDelegate.swift in Sources */,
-				F0B8A953244A1104008A8E58 /* InterfaceController.swift in Sources */,
+				F0B8A953244A1104008A8E58 /* BookDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

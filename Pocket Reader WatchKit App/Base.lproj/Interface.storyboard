@@ -6,10 +6,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Book Detail Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Pocket_Reader_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="BookDetailController" customModule="Pocket_Reader_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Поллиана" id="Ws5-x1-bpI"/>
                         <imageView alignment="left" image="444" id="UuG-iY-Aw1"/>
@@ -52,6 +52,9 @@
                                             </label>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <segue destination="V5H-TM-Jfe" kind="modal" id="827-Zb-qqF"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -61,9 +64,26 @@
                             <fontDescription key="font" type="system" pointSize="18"/>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="RVP-40-Njd" id="sN8-1a-ft7"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+        <!--Description Interface Controller-->
+        <scene sceneID="Nxi-e5-VKm">
+            <objects>
+                <controller id="V5H-TM-Jfe" customClass="DescriptionInterfaceController" customModule="Pocket_Reader_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="80P-DS-Kje"/>
+                    </items>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="80P-DS-Kje" id="nqn-4Q-5VW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="336" y="-103"/>
         </scene>
         <!--Starter Interface Controller-->
         <scene sceneID="kFF-Ae-arA">
@@ -80,6 +100,7 @@
                                     </group>
                                     <connections>
                                         <outlet property="nameLabel" destination="LAz-up-2lC" id="WQX-SC-WlJ"/>
+                                        <segue destination="AgC-eL-Hgc" kind="push" id="dG6-gp-2XF"/>
                                     </connections>
                                 </tableRow>
                             </items>
