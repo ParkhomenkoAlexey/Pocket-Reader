@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DT8-VP-Sry">
     <device id="watch38"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -64,6 +64,38 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+        <!--Starter Interface Controller-->
+        <scene sceneID="kFF-Ae-arA">
+            <objects>
+                <controller id="DT8-VP-Sry" customClass="StarterInterfaceController" customModule="Pocket_Reader_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="tV3-X5-EEd">
+                            <items>
+                                <tableRow identifier="myBookRow" id="LMN-h8-MaY" customClass="MyBookRowController" customModule="Pocket_Reader_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="U0l-cZ-7zc">
+                                        <items>
+                                            <label alignment="left" text="Расширить сознание легально" numberOfLines="0" id="LAz-up-2lC"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="nameLabel" destination="LAz-up-2lC" id="WQX-SC-WlJ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" title="Выбрать книги" id="yRt-L7-hSk">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="tV3-X5-EEd" id="OCF-QX-saE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-274" y="31"/>
         </scene>
     </scenes>
     <resources>

@@ -24,6 +24,8 @@
 		F0B8A96B244A1165008A8E58 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A96A244A1165008A8E58 /* StackView + Extension.swift */; };
 		F0B8A96D244A117F008A8E58 /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A96C244A117F008A8E58 /* BookItem.swift */; };
 		F0B8A96F244A1192008A8E58 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A96E244A1192008A8E58 /* UserSettings.swift */; };
+		F0B8A975244B03E6008A8E58 /* StarterInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A974244B03E6008A8E58 /* StarterInterfaceController.swift */; };
+		F0B8A977244B0627008A8E58 /* MyBookRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A976244B0627008A8E58 /* MyBookRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		F0B8A96A244A1165008A8E58 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
 		F0B8A96C244A117F008A8E58 /* BookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItem.swift; sourceTree = "<group>"; };
 		F0B8A96E244A1192008A8E58 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		F0B8A974244B03E6008A8E58 /* StarterInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterInterfaceController.swift; sourceTree = "<group>"; };
+		F0B8A976244B0627008A8E58 /* MyBookRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +164,9 @@
 		F0B8A951244A1104008A8E58 /* Pocket Reader WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F0B8A974244B03E6008A8E58 /* StarterInterfaceController.swift */,
 				F0B8A952244A1104008A8E58 /* InterfaceController.swift */,
+				F0B8A976244B0627008A8E58 /* MyBookRowController.swift */,
 				F0B8A954244A1104008A8E58 /* ExtensionDelegate.swift */,
 				F0B8A956244A1105008A8E58 /* Assets.xcassets */,
 				F0B8A958244A1105008A8E58 /* Info.plist */,
@@ -347,6 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B8A975244B03E6008A8E58 /* StarterInterfaceController.swift in Sources */,
+				F0B8A977244B0627008A8E58 /* MyBookRowController.swift in Sources */,
 				F0B8A955244A1104008A8E58 /* ExtensionDelegate.swift in Sources */,
 				F0B8A953244A1104008A8E58 /* InterfaceController.swift in Sources */,
 			);
