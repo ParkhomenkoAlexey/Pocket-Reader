@@ -62,10 +62,19 @@
                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <segue destination="Xzy-H1-hF8" kind="push" identifier="confirmedBook" id="xtj-3g-wF3"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>
+                        <outlet property="authorLabel" destination="nhg-A4-JRq" id="eXT-RY-pdS"/>
                         <outlet property="descriptionLabel" destination="RVP-40-Njd" id="sN8-1a-ft7"/>
+                        <outlet property="editionLabel" destination="3yr-0e-AAD" id="Jna-VC-wYN"/>
+                        <outlet property="image" destination="UuG-iY-Aw1" id="jeV-ZS-qiM"/>
+                        <outlet property="nameLabel" destination="Ws5-x1-bpI" id="cOR-fL-k5M"/>
+                        <outlet property="pagesLabel" destination="HRf-qb-eGD" id="o5N-Mi-2cK"/>
+                        <outlet property="selectButton" destination="bmB-Hw-GW5" id="LJX-wy-erH"/>
                     </connections>
                 </controller>
             </objects>
@@ -77,13 +86,49 @@
                 <controller id="V5H-TM-Jfe" customClass="DescriptionInterfaceController" customModule="Pocket_Reader_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Label" numberOfLines="0" id="80P-DS-Kje"/>
+                        <button width="1" alignment="left" title="Отменить" id="fql-L9-pGq">
+                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <action selector="cancelSelected" destination="V5H-TM-Jfe" id="2C1-66-yjQ"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="descriptionLabel" destination="80P-DS-Kje" id="nqn-4Q-5VW"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="336" y="-103"/>
+            <point key="canvasLocation" x="336" y="-123"/>
+        </scene>
+        <!--Confirmed Interface Controller-->
+        <scene sceneID="Vbi-Dx-Fwd">
+            <objects>
+                <controller id="Xzy-H1-hF8" customClass="ConfirmedInterfaceController" customModule="Pocket_Reader_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="xBz-SB-9US"/>
+                        <button width="1" alignment="left" title="Выбрать книгу" id="zxY-16-Xqf">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <action selector="bookSelected" destination="Xzy-H1-hF8" id="jbh-ci-eLJ"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Отменить" id="EkU-mt-19e">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <action selector="cancelSelected" destination="Xzy-H1-hF8" id="zRs-4n-xdr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="confirmationLabel" destination="xBz-SB-9US" id="Mrk-Hg-rkM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="336" y="214"/>
         </scene>
         <!--Starter Interface Controller-->
         <scene sceneID="kFF-Ae-arA">
@@ -119,7 +164,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-277" y="-103"/>
+            <point key="canvasLocation" x="-306" y="-132"/>
         </scene>
         <!--Books Interface Controller-->
         <scene sceneID="bKr-MT-47D">
@@ -165,7 +210,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-277" y="178"/>
+            <point key="canvasLocation" x="-306" y="233"/>
         </scene>
     </scenes>
     <resources>

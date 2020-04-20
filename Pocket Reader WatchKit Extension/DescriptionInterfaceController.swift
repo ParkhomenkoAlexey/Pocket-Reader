@@ -20,4 +20,8 @@ class DescriptionInterfaceController: WKInterfaceController {
             descriptionLabel.setText(description)
         }
     }
+    
+    @IBAction func cancelSelected() {
+        pop()
+    }
 }

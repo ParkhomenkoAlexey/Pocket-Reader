@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F08393F4244DE2D1009FCB1D /* ConfirmedInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08393F3244DE2D1009FCB1D /* ConfirmedInterfaceController.swift */; };
+		F08393F5244DE786009FCB1D /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A96E244A1192008A8E58 /* UserSettings.swift */; };
 		F0B8A92E244A1101008A8E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A92D244A1101008A8E58 /* AppDelegate.swift */; };
 		F0B8A930244A1101008A8E58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A92F244A1101008A8E58 /* SceneDelegate.swift */; };
 		F0B8A935244A1101008A8E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A933244A1101008A8E58 /* Main.storyboard */; };
@@ -76,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F08393F3244DE2D1009FCB1D /* ConfirmedInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmedInterfaceController.swift; sourceTree = "<group>"; };
 		F0B8A92A244A1101008A8E58 /* Pocket Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B8A92D244A1101008A8E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0B8A92F244A1101008A8E58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				F0B8A96C244A117F008A8E58 /* BookItem.swift */,
+				F0B8A96E244A1192008A8E58 /* UserSettings.swift */,
 				F0B8A92C244A1101008A8E58 /* Pocket Reader */,
 				F0B8A942244A1103008A8E58 /* Pocket Reader WatchKit App */,
 				F0B8A951244A1104008A8E58 /* Pocket Reader WatchKit Extension */,
@@ -178,6 +182,7 @@
 				F0E2BA8B244B683500974888 /* BooksInterfaceController.swift */,
 				F0B8A952244A1104008A8E58 /* BookDetailController.swift */,
 				F0E2BA89244B2FFF00974888 /* DescriptionInterfaceController.swift */,
+				F08393F3244DE2D1009FCB1D /* ConfirmedInterfaceController.swift */,
 				F0B8A976244B0627008A8E58 /* MyBookRowController.swift */,
 				F0E2BA8D244B69CA00974888 /* TableRowController.swift */,
 				F0E2BA8F244B69E100974888 /* HeaderRowController.swift */,
@@ -215,7 +220,6 @@
 		F0B8A973244A12AD008A8E58 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F0B8A96E244A1192008A8E58 /* UserSettings.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -371,10 +375,12 @@
 				F0E2BA8A244B2FFF00974888 /* DescriptionInterfaceController.swift in Sources */,
 				F0CCC8EA244B2DCC0006892E /* BookItem.swift in Sources */,
 				F0B8A955244A1104008A8E58 /* ExtensionDelegate.swift in Sources */,
+				F08393F4244DE2D1009FCB1D /* ConfirmedInterfaceController.swift in Sources */,
 				F0E2BA8C244B683500974888 /* BooksInterfaceController.swift in Sources */,
 				F0B8A953244A1104008A8E58 /* BookDetailController.swift in Sources */,
 				F0E2BA8E244B69CA00974888 /* TableRowController.swift in Sources */,
 				F0E2BA90244B69E100974888 /* HeaderRowController.swift in Sources */,
+				F08393F5244DE786009FCB1D /* UserSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
