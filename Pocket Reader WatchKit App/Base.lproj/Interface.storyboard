@@ -159,6 +159,15 @@
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="VGn-dN-Dg2">
+                        <items>
+                            <menuItem title="Delete all" icon="trash" id="ic6-xj-h3R">
+                                <connections>
+                                    <action selector="deleteAll" destination="DT8-VP-Sry" id="B1Z-XT-d96"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="table" destination="tV3-X5-EEd" id="OCF-QX-saE"/>
                     </connections>
@@ -218,6 +227,6 @@
         <image name="children" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lyn-Y9-3Pi"/>
+        <segue reference="dG6-gp-2XF"/>
     </inferredMetricsTieBreakers>
 </document>

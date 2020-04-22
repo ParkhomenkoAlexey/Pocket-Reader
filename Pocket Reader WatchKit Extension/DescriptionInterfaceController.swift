@@ -22,6 +22,6 @@ class DescriptionInterfaceController: WKInterfaceController {
     }
     
     @IBAction func cancelSelected() {
-        pop()
+        dismiss()
     }
 }
