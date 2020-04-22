@@ -48,6 +48,11 @@ class StarterInterfaceController: WKInterfaceController {
     @IBAction func deleteAll() {
         UserSettings.userBooks = []
         setupTable()
+        
+        DispatchQueue.main.async { () -> Void in
+          let notificationCenter = NotificationCenter.default
+          notificationCenter.post(name: Notification.Name(rawValue: NotificationPurchasedMovieOnWatch), object: nil)
+        }
     }
 }
 

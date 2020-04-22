@@ -14,11 +14,11 @@ let NotificaitonPurchasedMovieOnWatch = "PurchasedMovieOnWatch"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     lazy var notificationCenter: NotificationCenter = {
         return NotificationCenter.default
     }()
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupWatchConnectivity()
         setupNotificationCenter()
@@ -26,9 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupNotificationCenter() {
-      notificationCenter.addObserver(forName: NSNotification.Name(rawValue: NotificationPurchasedMovieOnPhone), object: nil, queue: nil) { (notification: Notification) -> Void in
-        self.sendSelectedBooksToWatch(notification: notification)
-      }
+        notificationCenter.addObserver(forName: NSNotification.Name(rawValue: NotificationPurchasedMovieOnPhone), object: nil, queue: nil) { (notification: Notification) -> Void in
+            self.sendSelectedBooksToWatch(notification: notification)
+        }
     }
     
     func setupWatchConnectivity() {
@@ -45,7 +45,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let pickedBooks = UserSettings.userBooks.map { (bookItem) in
                 return bookItem.representation
             }
-            print(pickedBooks)
             do {
                 let dictionary: [String : Any] = ["books": pickedBooks]
                 try session.updateApplicationContext(dictionary)
@@ -54,34 +53,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-
+    
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
     }
-
-
+    
+    
 }
 
 extension AppDelegate: WCSessionDelegate {
-  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-    if let error = error {
-    print("WC Session activation failed with error: " + "\(error.localizedDescription)")
-    return
-      }
-      print("WC Session activated with state: " + "\(activationState.rawValue)")
-  }
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if let error = error {
+            print("WC Session activation failed with error: " + "\(error.localizedDescription)")
+            return
+        }
+        print("WC Session activated with state: " + "\(activationState.rawValue)")
+    }
     
-  func sessionDidBecomeInactive(_ session: WCSession) {
-    print("WC Session did become inactive")
-  }
-  
-  func sessionDidDeactivate(_ session: WCSession) {
-    print("WC Session did deactivate")
-    WCSession.default.activate()
-  }
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("WC Session did become inactive")
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("WC Session did deactivate")
+        WCSession.default.activate()
+    }
+    
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        var pickedBooks = [BookItem]()
+        if let books = applicationContext["books"] as? [[String: Any]] {
+            books.forEach { (book) in
+                if let book = BookItem(data: book) {
+                    pickedBooks.append(book)
+                }
+                
+            }
+            print("Получил книги с часов")
+            pickedBooks.forEach { (book) in
+                print(book.name)
+            }
+            UserSettings.userBooks = pickedBooks
+            
+            DispatchQueue.main.async(execute: {
+                self.notificationCenter.post(
+                name: NSNotification.Name(rawValue: NotificaitonPurchasedMovieOnWatch), object: nil)
+            })
+            
+        }
+    }
 }

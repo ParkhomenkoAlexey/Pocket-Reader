@@ -9,10 +9,17 @@
 import WatchKit
 import WatchConnectivity
 
+let NotificationPurchasedMovieOnWatch = "PurchasedMovieOnWatch"
+
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    
+    lazy var notificationCenter: NotificationCenter = {
+    return NotificationCenter.default
+    }()
     
     func applicationDidFinishLaunching() {
         setupWatchConnectivity()
+        setupNotificationCenter()
     }
     
     func setupWatchConnectivity() {
@@ -22,6 +29,29 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
             session.activate()
         }
     }
+    
+    private func setupNotificationCenter() {
+      notificationCenter.addObserver(forName: NSNotification.Name(rawValue: NotificationPurchasedMovieOnWatch), object: nil, queue: nil) { (notification:Notification) -> Void in
+        self.sendSelectedBooksToPhone(notification: notification)
+      }
+    }
+    
+    func sendSelectedBooksToPhone(notification: Notification) {
+        print(#function)
+        if WCSession.isSupported() {
+            let session = WCSession.default
+            let pickedBooks = UserSettings.userBooks.map { (bookItem) in
+                return bookItem.representation
+            }
+            do {
+                let dictionary: [String : Any] = ["books": pickedBooks]
+                try session.updateApplicationContext(dictionary)
+            } catch {
+                print("ERROR: \(error)")
+            }
+        }
+    }
+
 }
 
 extension ExtensionDelegate: WCSessionDelegate {

@@ -28,6 +28,12 @@ class ConfirmedInterfaceController: WKInterfaceController {
 
     @IBAction func bookSelected() {
         UserSettings.userBooks.append(book)
+        
+        DispatchQueue.main.async { () -> Void in
+          let notificationCenter = NotificationCenter.default
+          notificationCenter.post(name: Notification.Name(rawValue: NotificationPurchasedMovieOnWatch), object: nil)
+        }
+        
         popToRootController()
     }
     
