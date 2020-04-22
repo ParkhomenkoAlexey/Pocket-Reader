@@ -177,6 +177,11 @@ extension BooksViewController {
             let snapshot = self.snapshot()
             let pickedItems = snapshot.itemIdentifiers(inSection: .activeNow)
             UserSettings.userBooks = pickedItems
+            
+            DispatchQueue.main.async { () -> Void in
+              let notificationCenter = NotificationCenter.default
+              notificationCenter.post(name: Notification.Name(rawValue: NotificationPurchasedMovieOnPhone), object: pickedItems)
+            }
         }
     }
     

@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import WatchConnectivity
 
 
 class StarterInterfaceController: WKInterfaceController {
@@ -49,3 +50,5 @@ class StarterInterfaceController: WKInterfaceController {
         setupTable()
     }
 }
+
+
